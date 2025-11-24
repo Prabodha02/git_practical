@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EmployeeController {
     @PostMapping(value = "/employees")
-    public void addEmployee(@RequestBody EmployeeAddRequest employeeAddRequest){
+    public EmployeeAddRequest addEmployee(@RequestBody EmployeeAddRequest employeeAddRequest){
         System.out.println("employee added");
+        return employeeAddRequest;
     }
 
 }
