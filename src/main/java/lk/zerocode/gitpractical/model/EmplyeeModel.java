@@ -3,6 +3,7 @@ package lk.zerocode.gitpractical.model;
 public class EmplyeeModel {
     private String firstName;
     private String lastName;
+    private Integer age;
     private String email;
     private Double salary;
     public  String getFirstName() {
